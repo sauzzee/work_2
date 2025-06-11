@@ -5,7 +5,7 @@ frequency = Hash.new(0)
 array.each { |num| frequency[num] += 1 }
 max_freq = frequency.values.max
 most_frequent = frequency.select { |k, v| v == max_freq }.keys
-puts "Наиболее часто встречающийся элемент(ы): #{most_frequent.join(', ')}"
+puts "Найчастіше зустрічається елемент: #{most_frequent.join(', ')}"
 
 2
 
@@ -17,4 +17,4 @@ def to_pig_latin(word)
   pig_word + punctuation
 end
 pig_latin_sentence = sentence.split.map { |w| to_pig_latin(w) }.join(" ")
-puts "Предложение в Pig Latin: #{pig_latin_sentence}"
+puts "Пропозиція в Pig Latin: #{pig_latin_sentence}"
